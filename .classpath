@@ -6,5 +6,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="lib/schimkat_berlin_lernhilfe2025ws_welcome.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
