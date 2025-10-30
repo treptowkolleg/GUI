@@ -7,19 +7,18 @@ import schimkat.berlin.lernhilfe2025ws.welcome.LittleDialog;
 
 public class RLEView extends AbstractView {
 
-	private JButton switchButton = new JButton("Zum Rechner");
+	private JButton switchButton = new JButton("Dialog starten");
 	
 
 	public RLEView(MainWindow frame) {
 		super(frame);
-		this.switchButton.addActionListener(e -> flip(Cards.CALCULATOR));
+		this.switchButton.addActionListener(e -> LittleDialog.sayHello());
 		this.add(switchButton);
 		
 	}
 
 	@Override
 	public void onFlip() {
-		LittleDialog.sayHello();
 		this.setTitle("RLE");
 	}
 
